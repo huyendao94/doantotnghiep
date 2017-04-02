@@ -7,43 +7,42 @@
   .home-center {
 
     .bxh {
-      // background-color: #e5e5e5;
       height: 700px;
-      margin-bottom: 30px;
+      /*margin-bottom: 30px;*/
 
       .child-tab {
-        .main1 {
-          float: left;
-          width: 31%;
+        .main1,.main2, .main3 {
           border: 1px #c7c7c7 solid;
-        }
-
-        .main2, .main3 {
-          float: left;
-          width: 31%;
-          margin-left: 36px;
-          border: 1px #c7c7c7 solid;
+          border-radius: 3px;
         }
 
         .main1-top {
-          padding-top: 10px;
-          padding-left: 10px;
+          overflow: hidden;
+          padding: 15px 0;
+          background: rgba(33, 31, 31, 0.05);
+          span.pointer.title-top{
+            text-transform: uppercase;
+            padding-left: 15px;
+            font-weight: bold;
+          }
         }
 
         .main1-body {
-          padding-top: 10px;
-          padding-left: 10px;
+          padding: 10px 5px 0 10px;
+          overflow: hidden;
 
-          ul {
+          ul.sub-main1-top {
             margin:  0;
-            padding:  0;
-
-            li:first-child {
+            padding: 10px 0;
+            overflow: hidden;
+            border-bottom: 1px solid #ececec;
+            li {
               border-top: 0;
               overflow: hidden;
               margin: 0;
               height: auto;
-
+              float: left;
+              width: 85%;
               .rank {
                 background: none;
                 color: #3b3b3b;
@@ -56,7 +55,30 @@
                 margin-right: 30px;
               }
             }
-
+            li.rank-left{
+              width: 15%;
+              margin-top: 10px;
+              padding-left: 8px;
+              font-size: 17px;
+            }
+            li.rank-right{
+              ul{
+                padding: 0 15px;
+                li{
+                  display: inline-block;
+                  clear: both;
+                  text-transform: capitalize;
+                }
+                li:first-child{
+                  font-weight: bold;
+                }
+                li:last-child{
+                  color: #A5A3A3;
+                  font-style: italic;
+                  font-size: 13px;
+                }
+              }
+            }
             .ellipsis {
               white-space: nowrap;
               text-overflow: ellipsis;
