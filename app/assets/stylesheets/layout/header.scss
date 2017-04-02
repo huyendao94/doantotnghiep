@@ -4,15 +4,17 @@
   height: 60px;
   z-index: 100;
 
-  // h4 {
-  //   color: #000000;
-  //   padding-top: 25px;
-  //   margin-top: 0;
-  //   margin-left: 30px;
-  //   display: inline-block;
-  //   font-size:14px;
-  //   font-weight:bold;
-  // }
+  h4.link-tag-top-header {
+    color: #000000;
+    /*padding-top: 25px;
+    margin-top: 0;
+    margin-left: 30px;
+    display: inline-block;*/
+    padding: 0 0 0 10px;
+    font-size:14px;
+    font-weight:bold;
+    line-height: 40px;
+  }
 
   // ul {
   //   display: initial;
